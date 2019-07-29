@@ -1,21 +1,58 @@
 body {
     margin: 0;
     font-family: 'sans-serif';
+}
+
+main {
     display: flex;
+    width: 90%;
+}
+
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: baseline;
 }
 
 .list-group {
     position: fixed;
-    top: 0;
-    left: 0;
-    // overflow-x: hidden;
-    // z-index: 1;
-    // width: 20%;
+    left: 10px;
+    padding: 10px;
 }
 
 .scrollspy-example {
-    margin-left: 18rem;
+    margin-left: 20rem;
     display: flex;
     flex-direction: column;
+    padding-top: 60px;
 }
 
+//callout
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    border-radius: 3px;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
